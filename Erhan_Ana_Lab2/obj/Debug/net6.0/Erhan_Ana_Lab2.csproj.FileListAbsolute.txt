@@ -528,3 +528,4 @@ C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\Erhan_An
 C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\Erhan_Ana_Lab2\obj\Debug\net6.0\Erhan_Ana_Lab2.pdb
 C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\Erhan_Ana_Lab2\obj\Debug\net6.0\Erhan_Ana_Lab2.genruntimeconfig.cache
 C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\Erhan_Ana_Lab2\obj\Debug\net6.0\ref\Erhan_Ana_Lab2.dll
+C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\Erhan_Ana_Lab2\bin\Debug\net6.0\libman.json
