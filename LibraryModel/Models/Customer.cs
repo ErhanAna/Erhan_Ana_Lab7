@@ -14,5 +14,8 @@ namespace LibraryModel.Models
 
         //navigation property
         public ICollection<Order>? Orders { get; set; }
+
+        public int CityID { get; set; }
+        public City? City { get; set; }
     }
 }

@@ -67,6 +67,22 @@ namespace LibraryModel.Migrations
                     b.ToTable("Book", (string)null);
                 });
 
+            modelBuilder.Entity("LibraryModel.Models.City", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+
+                    b.Property<string>("CityName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("City", (string)null);
+                });
+
             modelBuilder.Entity("LibraryModel.Models.Customer", b =>
                 {
                     b.Property<int>("CustomerID")
@@ -76,17 +92,20 @@ namespace LibraryModel.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CustomerID"), 1L, 1);
 
                     b.Property<string>("Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("BirthDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("CityID")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CustomerID");
+
+                    b.HasIndex("CityID");
 
                     b.ToTable("Customer", (string)null);
                 });
@@ -163,6 +182,17 @@ namespace LibraryModel.Migrations
                     b.Navigation("Author");
                 });
 
+            modelBuilder.Entity("LibraryModel.Models.Customer", b =>
+                {
+                    b.HasOne("LibraryModel.Models.City", "City")
+                        .WithMany("Customers")
+                        .HasForeignKey("CityID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("City");
+                });
+
             modelBuilder.Entity("LibraryModel.Models.Order", b =>
                 {
                     b.HasOne("LibraryModel.Models.Book", "Book")
@@ -211,6 +241,11 @@ namespace LibraryModel.Migrations
                     b.Navigation("Orders");
 
                     b.Navigation("PublishedBooks");
+                });
+
+            modelBuilder.Entity("LibraryModel.Models.City", b =>
+                {
+                    b.Navigation("Customers");
                 });
 
             modelBuilder.Entity("LibraryModel.Models.Customer", b =>

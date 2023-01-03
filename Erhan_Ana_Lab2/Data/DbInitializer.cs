@@ -16,13 +16,6 @@ namespace LibraryModel.Data
                     return; // DB has previously been created //
                 }
 
-                context.Customers.AddRange(
-                    new Customer { Name = "Popescu Marcela", Address = "Str. Plopilor, nr. 24", BirthDate = DateTime.Parse("1979-09-01") },
-                    new Customer { Name = "Mihailescu Cornel", Address = "Str. Bucuresti, nr. 45, ap. 2", BirthDate = DateTime.Parse("1969-07-08") }
-                );
-
-                context.SaveChanges();
-
                 context.Authors.AddRange(
                     new Author { FirstName = "Mihail", LastName = "Sadoveanu" },
                     new Author { FirstName = "George", LastName = "Calinescu" },
@@ -70,6 +63,40 @@ namespace LibraryModel.Data
                         Title = "De veghe in lanul de secara",
                         Price = Decimal.Parse("20.56"),
                         AuthorID = context.Authors.Single(author => author.LastName == "Salinger").ID
+                    }
+                );
+
+                context.SaveChanges();
+
+                var cities = new City[]
+                {
+                    new City { CityName="Cluj-Napoca" },
+                    new City { CityName="Brasov" },
+                    new City { CityName="Iasi" },
+                    new City { CityName="Bucuresti" }
+                };
+
+                foreach (City c in cities)
+                {
+                    context.Cities.Add(c);
+                }
+
+                context.SaveChanges();
+
+                context.Customers.AddRange(
+                    new Customer
+                    {
+                        Name = "Popescu Marcela",
+                        Address = "Str. Plopilor, nr. 24",
+                        BirthDate = DateTime.Parse("1979-09-01"),
+                        CityID = cities.Single(i => i.CityName == "Cluj-Napoca").ID
+                    },
+                    new Customer
+                    {
+                        Name = "Mihailescu Cornel",
+                        Address = "Str. Bucuresti, nr. 45, ap. 2",
+                        BirthDate = DateTime.Parse("1969-07-08"),
+                        CityID = cities.Single(i => i.CityName == "Bucuresti").ID
                     }
                 );
 
