@@ -1,10 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Erhan_Ana_Maria_Lab2.Models;
-using Erhan_Ana_Lab2.Models;
-using System.Security.Policy;
-using Publisher = Erhan_Ana_Lab2.Models.Publisher;
+using LibraryModel.Models;
 
-namespace Erhan_Ana_Maria_Lab2.Data
+using Publisher = LibraryModel.Models.Publisher;
+
+namespace LibraryModel.Data
 {
     public class DbInitializer
     {

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Erhan_Ana_Maria_Lab2.Data;
-using Erhan_Ana_Maria_Lab2.Models;
+using LibraryModel.Data;
+using LibraryModel.Models;
 
 namespace Erhan_Ana_Lab2.Controllers
 {

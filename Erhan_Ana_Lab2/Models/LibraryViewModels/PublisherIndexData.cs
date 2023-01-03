@@ -1,4 +1,4 @@
-﻿using Erhan_Ana_Maria_Lab2.Models;
+﻿using LibraryModel.Models;
 
 namespace Erhan_Ana_Lab2.Models.LibraryViewModels
 {

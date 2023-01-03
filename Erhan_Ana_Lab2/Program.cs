@@ -1,4 +1,4 @@
-using Erhan_Ana_Maria_Lab2.Data;
+using LibraryModel.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

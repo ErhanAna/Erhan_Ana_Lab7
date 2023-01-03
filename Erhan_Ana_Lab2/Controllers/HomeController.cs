@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using Erhan_Ana_Maria_Lab2.Data;
+using LibraryModel.Data;
 
 namespace Erhan_Ana_Lab2.Controllers
 {

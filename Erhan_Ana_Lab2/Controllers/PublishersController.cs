@@ -5,10 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Erhan_Ana_Lab2.Models;
-using Erhan_Ana_Maria_Lab2.Data;
+using LibraryModel.Models;
+using LibraryModel.Data;
 using Erhan_Ana_Lab2.Models.LibraryViewModels;
-using Erhan_Ana_Maria_Lab2.Models;
 
 namespace Erhan_Ana_Lab2.Controllers
 {

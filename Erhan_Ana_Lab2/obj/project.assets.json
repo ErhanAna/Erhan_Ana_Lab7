@@ -3464,6 +3464,20 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "LibraryModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10"
+        },
+        "compile": {
+          "bin/placeholder/LibraryModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryModel.dll": {}
+        }
       }
     }
   },
@@ -9839,10 +9853,16 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "LibraryModel/1.0.0": {
+      "type": "project",
+      "path": "../LibraryModel/LibraryModel.csproj",
+      "msbuildProject": "../LibraryModel/LibraryModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "LibraryModel >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.10",
@@ -9881,7 +9901,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\aerhan\\Desktop\\MASTER\\medii-programare-avansate\\Erhan_Ana_Lab7\\LibraryModel\\LibraryModel.csproj": {
+              "projectPath": "C:\\Users\\aerhan\\Desktop\\MASTER\\medii-programare-avansate\\Erhan_Ana_Lab7\\LibraryModel\\LibraryModel.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,0 +1,14 @@
+C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\LibraryModel\bin\Debug\net6.0\LibraryModel.deps.json
+C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\LibraryModel\bin\Debug\net6.0\LibraryModel.dll
+C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\LibraryModel\bin\Debug\net6.0\LibraryModel.pdb
+C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\LibraryModel\obj\Debug\net6.0\LibraryModel.csproj.AssemblyReference.cache
+C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\LibraryModel\obj\Debug\net6.0\LibraryModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\LibraryModel\obj\Debug\net6.0\LibraryModel.AssemblyInfoInputs.cache
+C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\LibraryModel\obj\Debug\net6.0\LibraryModel.AssemblyInfo.cs
+C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\LibraryModel\obj\Debug\net6.0\LibraryModel.csproj.CoreCompileInputs.cache
+C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\LibraryModel\obj\Debug\net6.0\LibraryModel.dll
+C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\LibraryModel\obj\Debug\net6.0\refint\LibraryModel.dll
+C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\LibraryModel\obj\Debug\net6.0\LibraryModel.pdb
+C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\LibraryModel\obj\Debug\net6.0\ref\LibraryModel.dll
+C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\LibraryModel\bin\Debug\net6.0\LibraryModel.runtimeconfig.json
+C:\Users\aerhan\Desktop\MASTER\medii-programare-avansate\Erhan_Ana_Lab7\LibraryModel\obj\Debug\net6.0\LibraryModel.genruntimeconfig.cache

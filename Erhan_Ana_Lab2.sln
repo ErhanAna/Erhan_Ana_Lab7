@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Erhan_Ana_Lab2", "Erhan_Ana_Lab2\Erhan_Ana_Lab2.csproj", "{47797A45-782D-4EF0-B0AA-E7CE9AC8E26B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Erhan_Ana_Lab2", "Erhan_Ana_Lab2\Erhan_Ana_Lab2.csproj", "{47797A45-782D-4EF0-B0AA-E7CE9AC8E26B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryModel", "LibraryModel\LibraryModel.csproj", "{F7C1F345-6C90-43B4-AC9B-61D60E8DE100}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryWebAPI", "LibraryWebAPI\LibraryWebAPI.csproj", "{D69403FB-7F17-4E11-A8F6-86BADDAADE83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{47797A45-782D-4EF0-B0AA-E7CE9AC8E26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47797A45-782D-4EF0-B0AA-E7CE9AC8E26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47797A45-782D-4EF0-B0AA-E7CE9AC8E26B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7C1F345-6C90-43B4-AC9B-61D60E8DE100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7C1F345-6C90-43B4-AC9B-61D60E8DE100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7C1F345-6C90-43B4-AC9B-61D60E8DE100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7C1F345-6C90-43B4-AC9B-61D60E8DE100}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69403FB-7F17-4E11-A8F6-86BADDAADE83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69403FB-7F17-4E11-A8F6-86BADDAADE83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69403FB-7F17-4E11-A8F6-86BADDAADE83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69403FB-7F17-4E11-A8F6-86BADDAADE83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
