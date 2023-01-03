@@ -89,12 +89,6 @@ namespace Erhan_Ana_Lab2.Controllers
 
                 if (response.IsSuccessStatusCode)
                 {
-                    if (ModelState.IsValid)
-                    {
-                        _context.Customers.Add(customer);
-                        await _context.SaveChangesAsync();
-                    }
-
                     return RedirectToAction("Index");
                 }
             }
@@ -139,34 +133,19 @@ namespace Erhan_Ana_Lab2.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Edit([Bind("CustomerID,Name,Adress,BirthDate,CityID")] Customer customer)
         {
-            if (!ModelState.IsValid) return View(customer);
+            if (!ModelState.IsValid)
+            {
+                return View(customer);
+            }
+
             var client = new HttpClient();
             string json = JsonConvert.SerializeObject(customer);
             var response = await client.PutAsync($"{_baseUrl}/{customer.CustomerID}",
             new StringContent(json, Encoding.UTF8, "application/json"));
+            
             if (response.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");
-            }
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(customer);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!CustomerExists(customer.CustomerID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
             }
 
             ViewBag.CityID = new SelectList(_context.Cities, "ID", "CityName", customer.CityID);
@@ -221,7 +200,7 @@ namespace Erhan_Ana_Lab2.Controllers
         }
 
         // POST: Customers/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(int id)
         {

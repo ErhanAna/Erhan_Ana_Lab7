@@ -10,6 +10,7 @@ namespace LibraryModel.Models
         public string? Address { get; set; }
 
         [Display(Name = "Date of birth")]
+        [DataType(DataType.Date)]
         public DateTime BirthDate { get; set; }
 
         //navigation property
